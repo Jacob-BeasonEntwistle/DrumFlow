@@ -1,0 +1,375 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2553870718291382168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2553870718644030272}
+  - component: {fileID: 2553870718644030275}
+  m_Layer: 0
+  m_Name: LeftDevice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2553870718644030272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553870718291382168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2553870719094724690}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2553870718644030275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553870718291382168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5de5d00a9211713489f079c9fa33b95f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stream: {fileID: 2553870718646915478}
+  isLeft: 1
+  battery: 0
+  chargingInProgress: 0
+  chargingComplete: 0
+  fingerPullData:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  fingerForceData:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  fingerTouchedData: 0000000000
+  fingerClickedData: 0000000000
+  systemButtonPressed: 0
+  sliderValue: 0
+  sliderButton: 0
+  sliderUpButton: 0
+  sliderDownButton: 0
+  trackpadCoordinates: {x: 0, y: 0}
+  trackpadTouched: 0
+  trackpadClicked: 0
+  trackpadTapped: 0
+  tap: 0
+  doubleTap: 0
+  trackerConnected: 0
+  proxTouched: 0
+  proxClicked: 0
+  proxValue: 0
+  accelerometer: {x: 0, y: 0, z: 0}
+  gyroscope: {x: 0, y: 0, z: 0}
+  gyroCalibrated: 0
+  gyroCalibrationDone: 0
+  gyroscopeOffsetValues: {x: 0, y: 0, z: 0}
+  magnetometer: {x: 0, y: 0, z: 0}
+  magCalibrated: 1
+  magCalibration:
+  - 0
+  - 0
+  - 0
+  magCalibrationDone: 0
+  magOffsetValues: {x: 0, y: 0, z: 0}
+  magOffset:
+  - 0
+  - 0
+  - 0
+  quaternions: {x: 0, y: 0, z: 0, w: 0}
+  offsetToHand: {x: 0, y: 0, z: 0, w: 1}
+  anglesOffset: {x: 0, y: 0, z: 0}
+  euler: {x: 0, y: 0, z: 0}
+  samplePeriod: 80
+  beta: 0.315
+  roll: 0
+  pitch: 0
+  yaw: 0
+  squeeze: 0
+  gripTouch: 0
+  gripClick: 0
+  pointIndependent: 0
+  pointIndependentAnalog: 0
+  pointExcludeTrackpad: 0
+  pointExcludeTrackpadAnalog: 0
+  pinchTrackpad: 0
+  pinchTrackpadAnalog: 0
+  pinchThumbFinger: 0
+  pinchThumbFingerAnalog: 0
+  enable: 1
+  handSmoothing: 1
+--- !u!1 &2553870718411404081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2553870718411404086}
+  - component: {fileID: 2553870719675216811}
+  m_Layer: 0
+  m_Name: RightDevice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2553870718411404086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553870718411404081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2553870719094724690}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2553870719675216811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553870718411404081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5de5d00a9211713489f079c9fa33b95f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stream: {fileID: 2553870718646915478}
+  isLeft: 0
+  battery: 0
+  chargingInProgress: 0
+  chargingComplete: 0
+  fingerPullData:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  fingerForceData:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  fingerTouchedData: 0000000000
+  fingerClickedData: 0000000000
+  systemButtonPressed: 0
+  sliderValue: 0
+  sliderButton: 0
+  sliderUpButton: 0
+  sliderDownButton: 0
+  trackpadCoordinates: {x: 0, y: 0}
+  trackpadTouched: 0
+  trackpadClicked: 0
+  trackpadTapped: 0
+  tap: 0
+  doubleTap: 0
+  trackerConnected: 0
+  proxTouched: 0
+  proxClicked: 0
+  proxValue: 0
+  accelerometer: {x: 0, y: 0, z: 0}
+  gyroscope: {x: 0, y: 0, z: 0}
+  gyroCalibrated: 0
+  gyroCalibrationDone: 0
+  gyroscopeOffsetValues: {x: 0, y: 0, z: 0}
+  magnetometer: {x: 0, y: 0, z: 0}
+  magCalibrated: 1
+  magCalibration:
+  - 0
+  - 0
+  - 0
+  magCalibrationDone: 0
+  magOffsetValues: {x: 0, y: 0, z: 0}
+  magOffset:
+  - 0
+  - 0
+  - 0
+  quaternions: {x: 0, y: 0, z: 0, w: 0}
+  offsetToHand: {x: 0, y: 0, z: 0, w: 1}
+  anglesOffset: {x: 0, y: 0, z: 0}
+  euler: {x: 0, y: 0, z: 0}
+  samplePeriod: 80
+  beta: 0.315
+  roll: 0
+  pitch: 0
+  yaw: 0
+  squeeze: 0
+  gripTouch: 0
+  gripClick: 0
+  pointIndependent: 0
+  pointIndependentAnalog: 0
+  pointExcludeTrackpad: 0
+  pointExcludeTrackpadAnalog: 0
+  pinchTrackpad: 0
+  pinchTrackpadAnalog: 0
+  pinchThumbFinger: 0
+  pinchThumbFingerAnalog: 0
+  enable: 1
+  handSmoothing: 1
+--- !u!1 &2553870719094724701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2553870719094724690}
+  m_Layer: 0
+  m_Name: eteeAPI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2553870719094724690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553870719094724701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2553870718646915479}
+  - {fileID: 2553870718644030272}
+  - {fileID: 2553870718411404086}
+  - {fileID: 2553870719463051958}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2553870719103819312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2553870718646915479}
+  - component: {fileID: 2553870718646915478}
+  m_Layer: 0
+  m_Name: CsharpSerial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2553870718646915479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553870719103819312}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2553870719094724690}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2553870718646915478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553870719103819312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f235ee418162e8943af1fca42465cb4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftDevice: {fileID: 2553870718644030275}
+  rightDevice: {fileID: 2553870719675216811}
+  serialPort: 
+  baudRate: 115200
+  bufferSize: 43
+  looping: 1
+  disconnectedThreshold: 85
+  leftConnected: 0
+  rightConnected: 0
+  gyroLeftOffset: {x: 0, y: 0, z: 0}
+  gyroRightOffset: {x: 0, y: 0, z: 0}
+  magLeftOffset: {x: 0, y: 0, z: 0}
+  magRightOffset: {x: 0, y: 0, z: 0}
+--- !u!1 &2553870719463051953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2553870719463051958}
+  - component: {fileID: 2553870718995811125}
+  m_Layer: 0
+  m_Name: API
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2553870719463051958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553870719463051953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2553870719094724690}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2553870718995811125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553870719463051953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 046f3e3f7a924bf4b8420522685584f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serialRead: {fileID: 2553870718646915478}
+  leftDevice: {fileID: 2553870718644030275}
+  rightDevice: {fileID: 2553870719675216811}
