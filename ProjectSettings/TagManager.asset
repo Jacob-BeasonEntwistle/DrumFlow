@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - leftHandModel
+  - rightHandModel
+  - hihat
+  - snare
+  - midTom
+  - ride
   layers:
   - Default
   - TransparentFX
