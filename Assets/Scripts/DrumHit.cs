@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using FMODUnity;
 
 public class DrumHit : MonoBehaviour
 {
     public etee.eteeAPI api;
+    [SerializeField] private EventReference ClosedHihatSound;
+    [SerializeField] private EventReference SnareSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,17 +28,24 @@ public class DrumHit : MonoBehaviour
         //UnityEngine.Debug.Log("Right Index Pull Pressure: " + rightPullData[1]);
 
         // Retrieve down swing for controllers
-        float leftSwingDown = api.GetAccelerometerSingleAxis(0, 'y');     // Left controller
-        float rightSwingDown = api.GetAccelerometerSingleAxis(1, 'y');     // Right controller
+        float leftSwing = api.GetAccelerometerSingleAxis(0, 'y');     // Left controller
+        float rightSwing = api.GetAccelerometerSingleAxis(1, 'y');     // Right controller
 
-        if (rightSwingDown < -1)
+        if (rightSwing < -1)
         {
             hihatHit();
+        }
+
+        if (leftSwing < -1)
+        {
+            AudioManager.instance.PlayOneShot(SnareSound, this.transform.position);
+            UnityEngine.Debug.Log("The Snare drum was hit! Ckk");
         }
     }
 
     void hihatHit()
     {
+        AudioManager.instance.PlayOneShot(ClosedHihatSound, this.transform.position);
         UnityEngine.Debug.Log("The Hi-hat was hit! Tss");
     }
 }
