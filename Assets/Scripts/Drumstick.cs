@@ -4,6 +4,8 @@ using System.Collections.Specialized;
 using UnityEngine;
 using FMODUnity;
 
+
+/* [--- This script is used to move the drumsticks and play each part of the kit depending on what the drumstick is colliding with ---] */
 public class DrumstickMovement : MonoBehaviour
 {
     public etee.eteeDevice device;
@@ -31,7 +33,7 @@ public class DrumstickMovement : MonoBehaviour
             // Assign the yaw to a variable...
             float yaw = LcontrollerAngles.x;
             // Set the transform rotation of the left drumstick to that yaw.
-            transform.rotation = Quaternion.Euler(54, -29, yaw);
+            transform.rotation = Quaternion.Euler(55, -30, yaw);
         }
         // If it's the right device...
         if (device.isLeft == false)
@@ -41,7 +43,7 @@ public class DrumstickMovement : MonoBehaviour
             // Assign the yaw to a variable...
             float yaw = RcontrollerAngles.x;
             // Set the transform rotation of the right drumstick to that yaw.
-            transform.rotation = Quaternion.Euler(47, 55, yaw);
+            transform.rotation = Quaternion.Euler(48, 55, yaw);
         }
 
         // Bools to check if the controller is squeezing.
@@ -94,7 +96,7 @@ public class DrumstickMovement : MonoBehaviour
         }
     }
 
-
+    // A function to play each sound of the drum kit.
     private void PlayInstrument(string drumTag)
     {
         switch (drumTag)
