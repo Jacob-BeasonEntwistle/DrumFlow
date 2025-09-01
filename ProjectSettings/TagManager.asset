@@ -10,6 +10,7 @@ TagManager:
   - snare
   - midTom
   - ride
+  - drumstick
   layers:
   - Default
   - TransparentFX

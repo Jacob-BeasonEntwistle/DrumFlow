@@ -20,6 +20,8 @@ public class BeatObject : MonoBehaviour
         {
             // the beat is played and set inactive.
             gameObject.SetActive(false);
+
+            GameManager.instance.BeatHit();
         }
     }
 
@@ -42,6 +44,8 @@ public class BeatObject : MonoBehaviour
             // the beat can no longer be pressed.
             canBePressed = false;
             currentDrumTag = "";
+
+            GameManager.instance.BeatMissed();
         }
     }
 }

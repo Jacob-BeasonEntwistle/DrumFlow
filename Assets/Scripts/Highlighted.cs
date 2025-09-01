@@ -17,11 +17,17 @@ public class Highlighted : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        rend.material = highlighted;
+        if (other.CompareTag("drumstick"))
+        {
+            rend.material = highlighted;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        rend.material = original;
+        if (other.CompareTag("drumstick"))
+        {
+            rend.material = original;
+        }
     }
 }

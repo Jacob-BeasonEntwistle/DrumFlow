@@ -8,6 +8,8 @@ using System;
 
 public class AudioManager : MonoBehaviour
 {
+    public FMOD.Studio.EventInstance musicEventInstance;
+
     public static AudioManager instance { get; private set; }
 
     private void Awake()
@@ -18,6 +20,29 @@ public class AudioManager : MonoBehaviour
         }
 
         instance = this;
+    }
+
+    public void InitializeMusic(EventReference musicEvent, Vector3 worldPos)
+    {
+        if (musicEventInstance.isValid())
+        {
+            musicEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            musicEventInstance.release();
+        }
+
+        musicEventInstance = RuntimeManager.CreateInstance(musicEvent);
+        RuntimeManager.AttachInstanceToGameObject(musicEventInstance, transform, GetComponent<Rigidbody>());
+
+        musicEventInstance.start();
+    }
+
+    public void StopMusic()
+    {
+        if (musicEventInstance.isValid())
+        {
+            musicEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            musicEventInstance.release();
+        }
     }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)

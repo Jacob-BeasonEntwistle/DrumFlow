@@ -23,15 +23,7 @@ public class BeatScroller : MonoBehaviour
     void Update()
     {
         // If the game hasn't yet started...
-        if (!hasStarted)
-        {
-            // When both controllers are squeezed simultaneously or the Space bar is pressed...
-            if (api.GetIsSqueezeGesture(0) == true && api.GetIsSqueezeGesture(1) == true || Input.GetKeyDown(KeyCode.Space))
-            {
-                // the game has then started.
-                hasStarted = true;
-            }
-        }
+        if (!hasStarted) return;
         else
         {
             // This moves beats towards the player at the speed set in the Start function.
