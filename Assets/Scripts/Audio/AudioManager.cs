@@ -31,7 +31,7 @@ public class AudioManager : MonoBehaviour
         }
 
         musicEventInstance = RuntimeManager.CreateInstance(musicEvent);
-        RuntimeManager.AttachInstanceToGameObject(musicEventInstance, transform, GetComponent<Rigidbody>());
+        RuntimeManager.AttachInstanceToGameObject(musicEventInstance, gameObject, GetComponent<Rigidbody>());
 
         musicEventInstance.start();
     }
