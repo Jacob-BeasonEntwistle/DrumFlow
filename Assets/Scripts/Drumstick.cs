@@ -5,12 +5,14 @@ using UnityEngine;
 using FMODUnity;
 
 
-/* [--- This script is used to move the drumsticks and play each part of the kit depending on what the drumstick is colliding with ---] */
+/* [--- This script is used to move the drumsticks and play each part of the kit depending on what the drumstick is colliding with. ---] */
 public class DrumstickMovement : MonoBehaviour
 {
+    // References to necessary etee components.
     public etee.eteeDevice device;
     public etee.eteeAPI api;
 
+    // Allows you to enter the different sounds that the drum kit is supposed to make.
     [SerializeField] private EventReference ClosedHihatSound;
     [SerializeField] private EventReference SnareSound;
     [SerializeField] private EventReference MidTomSound;
@@ -46,28 +48,36 @@ public class DrumstickMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(42, 37, yaw);
         }
 
-        // Bools to check if the controller is squeezing.
+        // Bools to check if each controller is squeezing.
         bool LSqueezing = api.GetIsSqueezeGesture(0);
         bool RSqueezing = api.GetIsSqueezeGesture(1);
         UnityEngine.Debug.Log("LSqueezing: " + LSqueezing + ", RSqueezing: " + RSqueezing);
 
+        // If there is a current box selected on the left, and the left controller is being squeezed, and it hasn't been played yet...
         if (currentBoxL != null && LSqueezing && !leftPlayed)
         {
+            // the drum kit part currently selected by the left hand is played...
             PlayInstrument(currentBoxL);
+            // and is marked as played.
             leftPlayed = true;
             UnityEngine.Debug.Log("Left controller squeezed. Current sound: " + currentBoxL);
         }
+        // If there is a current box selected on the right, and the right controller is being squeezed, and it hasn't been played yet...
         if (currentBoxR != null && RSqueezing && !rightPlayed)
         {
+            // the drum kit part currently selected by the right hand is played...
             PlayInstrument(currentBoxR);
+            // and is marked as played.
             rightPlayed = true;
             UnityEngine.Debug.Log("Right controller squeezed. Current sound: " + currentBoxR);
         }
 
+        // Once the player lets go of each controller after playing either part, the 'played' bool is reset to false.
         if (!LSqueezing && leftPlayed) leftPlayed = false;
         if (!RSqueezing && rightPlayed) rightPlayed = false;
     }
 
+    // Used to set which part of the drum kit is currently selected.
     private void OnTriggerEnter(Collider other)
     {
         UnityEngine.Debug.Log("Entered collider: " + other.tag);
@@ -84,6 +94,7 @@ public class DrumstickMovement : MonoBehaviour
         }
     }
 
+    // Used to deselect any parts of the drumkits once the collider is exited.
     private void OnTriggerExit(Collider other)
     {
         if (device.isLeft && other.tag == currentBoxL)
