@@ -6,75 +6,37 @@ using FMODUnity;
 
 
 /* [--- This script is used to move the drumsticks and play each part of the kit depending on what the drumstick is colliding with. ---] */
-public class DrumstickMovement : MonoBehaviour
+public class Drumstick : MonoBehaviour
 {
-    // References to necessary etee components.
-    public etee.eteeDevice device;
-    public etee.eteeAPI api;
-
     // Allows you to enter the different sounds that the drum kit is supposed to make.
     [SerializeField] private EventReference ClosedHihatSound;
     [SerializeField] private EventReference SnareSound;
     [SerializeField] private EventReference MidTomSound;
     [SerializeField] private EventReference RideSound;
 
-    private string currentBoxL = null;   // Which drum or cymbal the left drumstick is inside of.
-    private string currentBoxR = null;   // Which drum or cymbal the right drumstick is inside of.
+    private string currentBox = null;       // String to store the current collision box.
+    private bool hasPlayed = false;         // Bool to check whether the instrument has been played.
+    private bool isSqueezing = false;       // Bool to check if the controller is squeezing.
 
-    private bool leftPlayed = false;
-    private bool rightPlayed = false;
-
-    // Update is called once per frame
-    void Update()
+    // A method that updates the rotation of the drumstick.
+    public void UpdateRotation(Quaternion rotation)
     {
-        // If it's the left device...
-        if (device.isLeft == true)
-        {
-            // Get the rotations of the left controller...
-            Vector3 LcontrollerAngles = api.GetRotations(0);
-            // Assign the yaw to a variable...
-            float yaw = LcontrollerAngles.x;
-            // Set the transform rotation of the left drumstick to that yaw.
-            transform.rotation = Quaternion.Euler(47, -48, yaw);
-        }
-        // If it's the right device...
-        if (device.isLeft == false)
-        {
-            // Get the rotations of the right controller...
-            Vector3 RcontrollerAngles = api.GetRotations(1);
-            // Assign the yaw to a variable...
-            float yaw = RcontrollerAngles.x;
-            // Set the transform rotation of the right drumstick to that yaw.
-            transform.rotation = Quaternion.Euler(44, 16, yaw);
-        }
+        transform.rotation = rotation;
+    }
 
-        // Bools to check if each controller is squeezing.
-        bool LSqueezing = api.GetIsSqueezeGesture(0);
-        bool RSqueezing = api.GetIsSqueezeGesture(1);
-        UnityEngine.Debug.Log("LSqueezing: " + LSqueezing + ", RSqueezing: " + RSqueezing);
-
-        // If there is a current box selected on the left, and the left controller is being squeezed, and it hasn't been played yet...
-        if (currentBoxL != null && LSqueezing && !leftPlayed)
+    // A method that plays the instrument depending on if the controller is squeezed and the drum has not been played.
+    public void UpdateSqueeze(bool squeeze)
+    {
+        if (squeeze && !hasPlayed && currentBox != null)
         {
-            // the drum kit part currently selected by the left hand is played...
-            PlayInstrument(currentBoxL);
-            // and is marked as played.
-            leftPlayed = true;
-            UnityEngine.Debug.Log("Left controller squeezed. Current sound: " + currentBoxL);
+            PlayInstrument(currentBox);
+            hasPlayed = true;
         }
-        // If there is a current box selected on the right, and the right controller is being squeezed, and it hasn't been played yet...
-        if (currentBoxR != null && RSqueezing && !rightPlayed)
+        else if (!squeeze)
         {
-            // the drum kit part currently selected by the right hand is played...
-            PlayInstrument(currentBoxR);
-            // and is marked as played.
-            rightPlayed = true;
-            UnityEngine.Debug.Log("Right controller squeezed. Current sound: " + currentBoxR);
+            hasPlayed = false;
         }
-
-        // Once the player lets go of each controller after playing either part, the 'played' bool is reset to false.
-        if (!LSqueezing && leftPlayed) leftPlayed = false;
-        if (!RSqueezing && rightPlayed) rightPlayed = false;
+        isSqueezing = squeeze;
     }
 
     // Used to set which part of the drum kit is currently selected.
@@ -83,27 +45,26 @@ public class DrumstickMovement : MonoBehaviour
         UnityEngine.Debug.Log("Entered collider: " + other.tag);
         if (other.CompareTag("hihat") || other.CompareTag("snare") || other.CompareTag("midTom") || other.CompareTag("ride"))
         {
-            if (device.isLeft)
-            {
-                currentBoxL = other.tag;
-            }
-            else
-            {
-                currentBoxR = other.tag;
-            }
+            currentBox = other.tag;
+        }
+    }
+
+    // Used as a backup to ensure the drumstick constantly knows which drum it's colliding with.
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("hihat") || other.CompareTag("snare") || other.CompareTag("midTom") || other.CompareTag("ride"))
+        {
+            currentBox = other.tag;
         }
     }
 
     // Used to deselect any parts of the drumkits once the collider is exited.
     private void OnTriggerExit(Collider other)
     {
-        if (device.isLeft && other.tag == currentBoxL)
+        if (other.tag == currentBox)
         {
-            currentBoxL = null;
-        }
-        if (!device.isLeft && other.tag == currentBoxR)
-        {
-            currentBoxR = null;
+            currentBox = null;
+            hasPlayed = false;
         }
     }
 
