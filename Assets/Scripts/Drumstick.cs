@@ -35,7 +35,7 @@ public class DrumstickMovement : MonoBehaviour
             // Assign the yaw to a variable...
             float yaw = LcontrollerAngles.x;
             // Set the transform rotation of the left drumstick to that yaw.
-            transform.rotation = Quaternion.Euler(46, -42, yaw);
+            transform.rotation = Quaternion.Euler(47, -48, yaw);
         }
         // If it's the right device...
         if (device.isLeft == false)
@@ -45,7 +45,7 @@ public class DrumstickMovement : MonoBehaviour
             // Assign the yaw to a variable...
             float yaw = RcontrollerAngles.x;
             // Set the transform rotation of the right drumstick to that yaw.
-            transform.rotation = Quaternion.Euler(42, 37, yaw);
+            transform.rotation = Quaternion.Euler(44, 16, yaw);
         }
 
         // Bools to check if each controller is squeezing.

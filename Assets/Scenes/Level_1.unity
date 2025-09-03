@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 9056594}
   m_Layer: 0
   m_Name: hihatBeat (29)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 46756127}
   m_Layer: 0
   m_Name: rideBeat (18)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 76394098}
   m_Layer: 0
   m_Name: snareBeat (13)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -608,7 +608,7 @@ GameObject:
   - component: {fileID: 82617562}
   m_Layer: 0
   m_Name: hihatBeat (4)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 91685239}
   m_Layer: 0
   m_Name: hihatBeat (30)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -852,7 +852,7 @@ GameObject:
   - component: {fileID: 101740315}
   m_Layer: 0
   m_Name: hihatBeat (37)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -974,7 +974,7 @@ GameObject:
   - component: {fileID: 119055229}
   m_Layer: 0
   m_Name: hihatBeat (10)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1096,7 +1096,7 @@ GameObject:
   - component: {fileID: 132561037}
   m_Layer: 0
   m_Name: snareBeat (21)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1218,7 +1218,7 @@ GameObject:
   - component: {fileID: 135124832}
   m_Layer: 0
   m_Name: snareBeat (15)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1340,7 +1340,7 @@ GameObject:
   - component: {fileID: 136968131}
   m_Layer: 0
   m_Name: rideBeat (27)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1462,7 +1462,7 @@ GameObject:
   - component: {fileID: 154388188}
   m_Layer: 0
   m_Name: hihatBeat (2)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1584,7 +1584,7 @@ GameObject:
   - component: {fileID: 195602867}
   m_Layer: 0
   m_Name: snareBeat
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1706,7 +1706,7 @@ GameObject:
   - component: {fileID: 211136530}
   m_Layer: 0
   m_Name: rideBeat (41)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1828,7 +1828,7 @@ GameObject:
   - component: {fileID: 211782015}
   m_Layer: 0
   m_Name: hihatBeat (1)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1950,7 +1950,7 @@ GameObject:
   - component: {fileID: 236935207}
   m_Layer: 0
   m_Name: hihatBeat (15)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2072,7 +2072,7 @@ GameObject:
   - component: {fileID: 241489627}
   m_Layer: 0
   m_Name: hihatBeat (32)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2194,7 +2194,7 @@ GameObject:
   - component: {fileID: 252958469}
   m_Layer: 0
   m_Name: rideBeat (21)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2316,7 +2316,7 @@ GameObject:
   - component: {fileID: 258910961}
   m_Layer: 0
   m_Name: hihatBeat (21)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2438,7 +2438,7 @@ GameObject:
   - component: {fileID: 266023838}
   m_Layer: 0
   m_Name: hihatBeat (34)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2713,7 +2713,7 @@ GameObject:
   - component: {fileID: 291198678}
   m_Layer: 0
   m_Name: snareBeat (10)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2835,7 +2835,7 @@ GameObject:
   - component: {fileID: 295693751}
   m_Layer: 0
   m_Name: rideBeat (5)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2957,7 +2957,7 @@ GameObject:
   - component: {fileID: 326309258}
   m_Layer: 0
   m_Name: rideBeat (17)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3079,7 +3079,7 @@ GameObject:
   - component: {fileID: 347953231}
   m_Layer: 0
   m_Name: rideBeat (34)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3201,7 +3201,7 @@ GameObject:
   - component: {fileID: 358672769}
   m_Layer: 0
   m_Name: hihatBeat (13)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3323,7 +3323,7 @@ GameObject:
   - component: {fileID: 371351341}
   m_Layer: 0
   m_Name: hihatBeat (27)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3445,7 +3445,7 @@ GameObject:
   - component: {fileID: 391860725}
   m_Layer: 0
   m_Name: rideBeat (13)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3567,7 +3567,7 @@ GameObject:
   - component: {fileID: 395385558}
   m_Layer: 0
   m_Name: snareBeat (3)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3689,7 +3689,7 @@ GameObject:
   - component: {fileID: 397939775}
   m_Layer: 0
   m_Name: rideBeat (15)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3890,7 +3890,7 @@ GameObject:
   - component: {fileID: 415260408}
   m_Layer: 0
   m_Name: hihatBeat (9)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4012,7 +4012,7 @@ GameObject:
   - component: {fileID: 452430251}
   m_Layer: 0
   m_Name: rideBeat (11)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4134,7 +4134,7 @@ GameObject:
   - component: {fileID: 480326949}
   m_Layer: 0
   m_Name: rideBeat (25)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4256,7 +4256,7 @@ GameObject:
   - component: {fileID: 483383454}
   m_Layer: 0
   m_Name: rideBeat (4)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4378,7 +4378,7 @@ GameObject:
   - component: {fileID: 483976654}
   m_Layer: 0
   m_Name: snareBeat (27)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4505,7 +4505,7 @@ GameObject:
   - component: {fileID: 501430731}
   m_Layer: 0
   m_Name: snareBeat (7)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4704,7 +4704,7 @@ GameObject:
   - component: {fileID: 558244033}
   m_Layer: 0
   m_Name: hihatBeat (18)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4960,7 +4960,7 @@ GameObject:
   - component: {fileID: 590165779}
   m_Layer: 0
   m_Name: rideBeat (38)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5082,7 +5082,7 @@ GameObject:
   - component: {fileID: 594655602}
   m_Layer: 0
   m_Name: hihatBeat (24)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5204,7 +5204,7 @@ GameObject:
   - component: {fileID: 610610075}
   m_Layer: 0
   m_Name: rideBeat (32)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5326,7 +5326,7 @@ GameObject:
   - component: {fileID: 628062257}
   m_Layer: 0
   m_Name: hihatBeat (17)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5448,7 +5448,7 @@ GameObject:
   - component: {fileID: 628825024}
   m_Layer: 0
   m_Name: snareBeat (28)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5570,7 +5570,7 @@ GameObject:
   - component: {fileID: 670675690}
   m_Layer: 0
   m_Name: rideBeat (19)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5795,7 +5795,7 @@ GameObject:
   - component: {fileID: 686888606}
   m_Layer: 0
   m_Name: snareBeat (8)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5917,7 +5917,7 @@ GameObject:
   - component: {fileID: 698421500}
   m_Layer: 0
   m_Name: hihatBeat (8)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6039,7 +6039,7 @@ GameObject:
   - component: {fileID: 703231836}
   m_Layer: 0
   m_Name: snareBeat (24)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6255,7 +6255,7 @@ GameObject:
   - component: {fileID: 717844835}
   m_Layer: 0
   m_Name: rideBeat (23)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6377,7 +6377,7 @@ GameObject:
   - component: {fileID: 729666324}
   m_Layer: 0
   m_Name: rideBeat (10)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6499,7 +6499,7 @@ GameObject:
   - component: {fileID: 742020348}
   m_Layer: 0
   m_Name: snareBeat (6)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6621,7 +6621,7 @@ GameObject:
   - component: {fileID: 752903499}
   m_Layer: 0
   m_Name: hihatBeat (3)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6743,7 +6743,7 @@ GameObject:
   - component: {fileID: 766130062}
   m_Layer: 0
   m_Name: rideBeat (9)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6865,7 +6865,7 @@ GameObject:
   - component: {fileID: 788799721}
   m_Layer: 0
   m_Name: hihatBeat (26)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6987,7 +6987,7 @@ GameObject:
   - component: {fileID: 797640810}
   m_Layer: 0
   m_Name: hihatBeat (20)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7114,7 +7114,7 @@ GameObject:
   - component: {fileID: 826746994}
   m_Layer: 0
   m_Name: rideBeat (8)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7236,7 +7236,7 @@ GameObject:
   - component: {fileID: 827890190}
   m_Layer: 0
   m_Name: rideBeat (36)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7358,7 +7358,7 @@ GameObject:
   - component: {fileID: 838343197}
   m_Layer: 0
   m_Name: rideBeat (28)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7480,7 +7480,7 @@ GameObject:
   - component: {fileID: 843973523}
   m_Layer: 0
   m_Name: rideBeat (26)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7602,7 +7602,7 @@ GameObject:
   - component: {fileID: 865107830}
   m_Layer: 0
   m_Name: hihatBeat (7)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7724,7 +7724,7 @@ GameObject:
   - component: {fileID: 866456267}
   m_Layer: 0
   m_Name: hihatBeat (28)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7846,7 +7846,7 @@ GameObject:
   - component: {fileID: 880829687}
   m_Layer: 0
   m_Name: rideBeat (31)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7967,43 +7967,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.085
+      value: 0.09068705
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.987
+      value: 0.9884728
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.556
+      value: 0.5525358
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.890393
+      value: 0.91632634
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.37635174
+      value: 0.37115493
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.2556359
+      value: 0.13599794
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.014490609
+      value: -0.06398927
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 42.657
+      value: 44.235
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 37.17
+      value: 16.354
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 13.094
+      value: -1.305
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_Materials.Array.size
@@ -8154,7 +8154,7 @@ GameObject:
   - component: {fileID: 912988489}
   m_Layer: 0
   m_Name: rideBeat (20)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8276,7 +8276,7 @@ GameObject:
   - component: {fileID: 914648993}
   m_Layer: 0
   m_Name: hihatBeat (14)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8564,7 +8564,7 @@ GameObject:
   - component: {fileID: 977281170}
   m_Layer: 0
   m_Name: hihatBeat (12)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8767,7 +8767,7 @@ GameObject:
   - component: {fileID: 994498232}
   m_Layer: 0
   m_Name: rideBeat (33)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8889,7 +8889,7 @@ GameObject:
   - component: {fileID: 1001414202}
   m_Layer: 0
   m_Name: snareBeat (20)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9011,7 +9011,7 @@ GameObject:
   - component: {fileID: 1005936350}
   m_Layer: 0
   m_Name: snareBeat (19)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9133,7 +9133,7 @@ GameObject:
   - component: {fileID: 1009129562}
   m_Layer: 0
   m_Name: rideBeat (40)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9255,7 +9255,7 @@ GameObject:
   - component: {fileID: 1020303151}
   m_Layer: 0
   m_Name: hihatBeat (35)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9377,7 +9377,7 @@ GameObject:
   - component: {fileID: 1024792483}
   m_Layer: 0
   m_Name: rideBeat (29)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9499,7 +9499,7 @@ GameObject:
   - component: {fileID: 1032000218}
   m_Layer: 0
   m_Name: snareBeat (18)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9621,7 +9621,7 @@ GameObject:
   - component: {fileID: 1032855718}
   m_Layer: 0
   m_Name: rideBeat (24)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9743,7 +9743,7 @@ GameObject:
   - component: {fileID: 1058486467}
   m_Layer: 0
   m_Name: snareBeat (17)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9865,7 +9865,7 @@ GameObject:
   - component: {fileID: 1072457799}
   m_Layer: 0
   m_Name: snareBeat (9)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9987,7 +9987,7 @@ GameObject:
   - component: {fileID: 1086091113}
   m_Layer: 0
   m_Name: snareBeat (5)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10109,7 +10109,7 @@ GameObject:
   - component: {fileID: 1092129529}
   m_Layer: 0
   m_Name: hihatBeat (25)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10231,7 +10231,7 @@ GameObject:
   - component: {fileID: 1095948073}
   m_Layer: 0
   m_Name: snareBeat (25)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10353,7 +10353,7 @@ GameObject:
   - component: {fileID: 1105996152}
   m_Layer: 0
   m_Name: rideBeat (37)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10475,7 +10475,7 @@ GameObject:
   - component: {fileID: 1129956040}
   m_Layer: 0
   m_Name: hihatBeat
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10597,7 +10597,7 @@ GameObject:
   - component: {fileID: 1158990695}
   m_Layer: 0
   m_Name: snareBeat (14)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10719,7 +10719,7 @@ GameObject:
   - component: {fileID: 1163499145}
   m_Layer: 0
   m_Name: rideBeat (35)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10892,9 +10892,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.010012306
-  m_Height: 0.0019378505
+  m_Height: 0.027178884
   m_Direction: 1
-  m_Center: {x: 0.0000000018626451, y: 0.000012635573, z: -0.0000000013969839}
+  m_Center: {x: 0.0000000022068969, y: -0.0033850071, z: -0.0000000011034483}
 --- !u!1 &1175703014
 GameObject:
   m_ObjectHideFlags: 0
@@ -10910,7 +10910,7 @@ GameObject:
   - component: {fileID: 1175703016}
   m_Layer: 0
   m_Name: snareBeat (23)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11032,7 +11032,7 @@ GameObject:
   - component: {fileID: 1178176463}
   m_Layer: 0
   m_Name: rideBeat (7)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11154,7 +11154,7 @@ GameObject:
   - component: {fileID: 1223509474}
   m_Layer: 0
   m_Name: rideBeat (39)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11276,7 +11276,7 @@ GameObject:
   - component: {fileID: 1246198018}
   m_Layer: 0
   m_Name: hihatBeat (5)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11398,7 +11398,7 @@ GameObject:
   - component: {fileID: 1280132612}
   m_Layer: 0
   m_Name: snareBeat (1)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11520,7 +11520,7 @@ GameObject:
   - component: {fileID: 1301839649}
   m_Layer: 0
   m_Name: hihatBeat (31)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11642,7 +11642,7 @@ GameObject:
   - component: {fileID: 1315290593}
   m_Layer: 0
   m_Name: snareBeat (29)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11764,7 +11764,7 @@ GameObject:
   - component: {fileID: 1357900825}
   m_Layer: 0
   m_Name: snareBeat (4)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11886,7 +11886,7 @@ GameObject:
   - component: {fileID: 1394364043}
   m_Layer: 0
   m_Name: hihatBeat (22)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12008,7 +12008,7 @@ GameObject:
   - component: {fileID: 1399665382}
   m_Layer: 0
   m_Name: rideBeat (30)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12181,9 +12181,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.010012306
-  m_Height: 0.0019378514
+  m_Height: 0.036872905
   m_Direction: 1
-  m_Center: {x: 9.3122826e-10, y: 0.000012650474, z: -0.0000000013970778}
+  m_Center: {x: 7.0138434e-10, y: -0.0037837115, z: -0.0000000015343644}
 --- !u!1 &1459202624
 GameObject:
   m_ObjectHideFlags: 0
@@ -12199,7 +12199,7 @@ GameObject:
   - component: {fileID: 1459202626}
   m_Layer: 0
   m_Name: hihatBeat (19)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12811,7 +12811,7 @@ GameObject:
   - component: {fileID: 1535927806}
   m_Layer: 0
   m_Name: hihatBeat (16)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12932,43 +12932,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.21545863
+      value: -0.21918802
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9955356
+      value: 0.9957008
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5599298
+      value: 0.5554146
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8452515
+      value: 0.83597326
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.3504013
+      value: 0.36470792
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3545679
+      value: -0.3762542
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.1924849
+      value: 0.16300218
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 46.79
+      value: 47.091
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -42.721
+      value: -48.533
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 6.45
+      value: -0.161
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 94837aae357178e4692bdf42a91d1582, type: 3}
       propertyPath: m_Materials.Array.size
@@ -13114,7 +13114,7 @@ GameObject:
   - component: {fileID: 1588645456}
   m_Layer: 0
   m_Name: rideBeat (14)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13236,7 +13236,7 @@ GameObject:
   - component: {fileID: 1657072087}
   m_Layer: 0
   m_Name: hihatBeat (11)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13358,7 +13358,7 @@ GameObject:
   - component: {fileID: 1671860644}
   m_Layer: 0
   m_Name: hihatBeat (33)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13570,7 +13570,7 @@ GameObject:
   - component: {fileID: 1822187465}
   m_Layer: 0
   m_Name: hihatBeat (6)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13692,7 +13692,7 @@ GameObject:
   - component: {fileID: 1856740928}
   m_Layer: 0
   m_Name: hihatBeat (23)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13814,7 +13814,7 @@ GameObject:
   - component: {fileID: 1909384062}
   m_Layer: 0
   m_Name: snareBeat (22)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14041,7 +14041,7 @@ GameObject:
   - component: {fileID: 1952946187}
   m_Layer: 0
   m_Name: rideBeat (12)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14297,7 +14297,7 @@ GameObject:
   - component: {fileID: 2004403483}
   m_Layer: 0
   m_Name: snareBeat (2)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14419,7 +14419,7 @@ GameObject:
   - component: {fileID: 2022187772}
   m_Layer: 0
   m_Name: rideBeat (6)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14541,7 +14541,7 @@ GameObject:
   - component: {fileID: 2022780792}
   m_Layer: 0
   m_Name: rideBeat (22)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14663,7 +14663,7 @@ GameObject:
   - component: {fileID: 2047797874}
   m_Layer: 0
   m_Name: snareBeat (12)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14818,7 +14818,7 @@ GameObject:
   - component: {fileID: 2096403903}
   m_Layer: 0
   m_Name: snareBeat (11)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14940,7 +14940,7 @@ GameObject:
   - component: {fileID: 2101122946}
   m_Layer: 0
   m_Name: rideBeat (16)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15062,7 +15062,7 @@ GameObject:
   - component: {fileID: 2119593050}
   m_Layer: 0
   m_Name: snareBeat (26)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15184,7 +15184,7 @@ GameObject:
   - component: {fileID: 2126535087}
   m_Layer: 0
   m_Name: hihatBeat (36)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15306,7 +15306,7 @@ GameObject:
   - component: {fileID: 2131277924}
   m_Layer: 0
   m_Name: snareBeat (16)
-  m_TagString: Untagged
+  m_TagString: beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
