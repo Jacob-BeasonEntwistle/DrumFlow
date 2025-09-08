@@ -5,7 +5,7 @@ using UnityEngine;
 using FMODUnity;
 
 
-/* [--- This script is used to move the drumsticks and play each part of the kit depending on what the drumstick is colliding with. ---] */
+/* [--- This script is used to handle the behaviour of a single drumstick. ---] */
 public class Drumstick : MonoBehaviour
 {
     // Allows you to enter the different sounds that the drum kit is supposed to make.
