@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using FMODUnity;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     public bool startPlaying;
     public BeatScroller beatScroller;
     [SerializeField] private EventReference LevelMusic;
+    //public int currentLevel = 1;
     
     public int currentScore;
     public int scorePerBeat = 100;
@@ -39,6 +41,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        api.RestartStreaming();
+
         instance = this;
         scoreText.text = "Score: 0";
 <<<<<<< HEAD
@@ -109,6 +113,8 @@ public class GameManager : MonoBehaviour
 
                 finalScoreText.text = currentScore.ToString();
             }
+
+            //levelContinue();
         }
     }
 
@@ -172,4 +178,15 @@ public class GameManager : MonoBehaviour
         missedHits++;
 >>>>>>> e99259d (New Song)
     }
+
+    //public void levelContinue()
+    //{
+    //    if (AudioManager.instance.IsMusicStopped() && resultsScreen.activeInHierarchy)
+    //    {
+    //        if (api.GetIsSqueezeGesture(0) == true && api.GetIsSqueezeGesture(1) == true || Input.GetKeyDown(KeyCode.Space))
+    //        {
+    //            SceneManager.LoadScene("Level_" + (currentLevel + 1).ToString());
+    //        }
+    //    }
+    //}
 }
