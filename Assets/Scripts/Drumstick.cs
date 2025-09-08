@@ -5,8 +5,13 @@ using UnityEngine;
 using FMODUnity;
 
 
+<<<<<<< HEAD
 /* [--- This script is used to move the drumsticks and play each part of the kit depending on what the drumstick is colliding with ---] */
 public class DrumstickMovement : MonoBehaviour
+=======
+/* [--- This script is used to handle the behaviour of a single drumstick. ---] */
+public class Drumstick : MonoBehaviour
+>>>>>>> e99259d (New Song)
 {
     public etee.eteeDevice device;
     public etee.eteeAPI api;

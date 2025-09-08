@@ -45,6 +45,19 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public bool IsMusicStopped()
+    {
+        if (!musicEventInstance.isValid())
+        {
+            return true;
+        }
+
+        FMOD.Studio.PLAYBACK_STATE playbackState;
+        musicEventInstance.getPlaybackState(out playbackState);
+
+        return playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED;
+    }
+
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);
