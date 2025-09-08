@@ -9,22 +9,30 @@ public class UIDrumstick : MonoBehaviour
     public etee.eteeDevice rightDevice;
     public etee.eteeAPI api;
 
+    public GameObject leftStick;
+    public GameObject rightStick;
+
     // Update is called once per frame
     void Update()
     {
         // Gets the rotations of the left controller.
         Vector3 LcontrollerAngles = api.GetRotations(0);
         // Updates the left sticks rotations to that of the controller.
-        UpdateRotation(Quaternion.Euler(0, 0, LcontrollerAngles.x));
+        LeftUpdateRotation(Quaternion.Euler(90, 0, LcontrollerAngles.x));
 
         // Get the rotations of the right controller...
         Vector3 RcontrollerAngles = api.GetRotations(1);
         // Updates the right sticks rotations to that of the controller.
-        UpdateRotation(Quaternion.Euler(0, 0, RcontrollerAngles.x));
+        RightUpdateRotation(Quaternion.Euler(90, 0, RcontrollerAngles.x));
     }
 
-    public void UpdateRotation(Quaternion rotation)
+    public void LeftUpdateRotation(Quaternion rotation)
     {
-        transform.rotation = rotation;
+        leftStick.transform.rotation = rotation;
+    }
+
+    public void RightUpdateRotation(Quaternion rotation)
+    {
+        rightStick.transform.rotation = rotation;
     }
 }
