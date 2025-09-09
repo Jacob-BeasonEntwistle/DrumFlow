@@ -45,13 +45,10 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         scoreText.text = "Score: 0";
-<<<<<<< HEAD
-=======
         currentMultiplier = 1;
 
         // Finds all objects with the script 'BeatObject'.
         totalBeats = FindObjectsOfType<BeatObject>().Length;
->>>>>>> e99259d (New Song)
     }
 
     // Update is called once per frame
@@ -122,9 +119,6 @@ public class GameManager : MonoBehaviour
     {
         UnityEngine.Debug.Log("Hit On Time");
 
-<<<<<<< HEAD
-        currentScore += scorePerNote;
-=======
         if (currentMultiplier - 1 < multiplierThresholds.Length)
         {
             multiplierTracker++;
@@ -139,7 +133,6 @@ public class GameManager : MonoBehaviour
         multiText.text = "Multiplier: x" + currentMultiplier;
 
         currentScore += scorePerBeat * currentMultiplier;
->>>>>>> e99259d (New Song)
         scoreText.text = "Score: " + currentScore;
 
         normalHits++;   // - can remove if different types of hits added -
@@ -167,8 +160,6 @@ public class GameManager : MonoBehaviour
     public void BeatMissed()
     {
         UnityEngine.Debug.Log("Missed Beat");
-<<<<<<< HEAD
-=======
 
         currentMultiplier = 1;
         multiplierTracker = 0;
@@ -176,7 +167,6 @@ public class GameManager : MonoBehaviour
         multiText.text = "Multiplier: x" + currentMultiplier;
 
         missedHits++;
->>>>>>> e99259d (New Song)
     }
 
     //public void levelContinue()
