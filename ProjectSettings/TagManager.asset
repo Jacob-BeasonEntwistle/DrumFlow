@@ -12,6 +12,7 @@ TagManager:
   - ride
   - drumstick
   - beat
+  - MenuButton
   layers:
   - Default
   - TransparentFX

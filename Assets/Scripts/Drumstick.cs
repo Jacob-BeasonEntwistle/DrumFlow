@@ -9,23 +9,23 @@ using FMODUnity;
 public class Drumstick : MonoBehaviour
 {
     // Allows you to enter the different sounds that the drum kit is supposed to make.
-    [SerializeField] private EventReference ClosedHihatSound;
-    [SerializeField] private EventReference SnareSound;
-    [SerializeField] private EventReference MidTomSound;
-    [SerializeField] private EventReference RideSound;
+    [SerializeField] protected EventReference ClosedHihatSound;
+    [SerializeField] protected EventReference SnareSound;
+    [SerializeField] protected EventReference MidTomSound;
+    [SerializeField] protected EventReference RideSound;
 
-    private string currentBox = null;       // String to store the current collision box.
-    private bool hasPlayed = false;         // Bool to check whether the instrument has been played.
-    private bool isSqueezing = false;       // Bool to check if the controller is squeezing.
+    protected string currentBox = null;       // String to store the current collision box.
+    protected bool hasPlayed = false;         // Bool to check whether the instrument has been played.
+    protected bool isSqueezing = false;       // Bool to check if the controller is squeezing.
 
     // A method that updates the rotation of the drumstick.
-    public void UpdateRotation(Quaternion rotation)
+    public virtual void UpdateRotation(Quaternion rotation)
     {
         transform.rotation = rotation;
     }
 
     // A method that plays the instrument depending on if the controller is squeezed and the drum has not been played.
-    public void UpdateSqueeze(bool squeeze)
+    public virtual void UpdateSqueeze(bool squeeze)
     {
         if (squeeze && !hasPlayed && currentBox != null)
         {
@@ -40,7 +40,7 @@ public class Drumstick : MonoBehaviour
     }
 
     // Used to set which part of the drum kit is currently selected.
-    private void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         UnityEngine.Debug.Log("Entered collider: " + other.tag);
         if (other.CompareTag("hihat") || other.CompareTag("snare") || other.CompareTag("midTom") || other.CompareTag("ride"))
@@ -59,7 +59,7 @@ public class Drumstick : MonoBehaviour
     }
 
     // Used to deselect any parts of the drumkits once the collider is exited.
-    private void OnTriggerExit(Collider other)
+    protected virtual void OnTriggerExit(Collider other)
     {
         if (other.tag == currentBox)
         {

@@ -14,20 +14,22 @@ public class DrumstickController : MonoBehaviour
     public Drumstick leftStick;
     public Drumstick rightStick;
 
+    public float Lx, Ly, Rx, Ry;
+
     // Update is called once per frame
     void Update()
     {
         // Gets the rotations of the left controller.
         Vector3 LcontrollerAngles = api.GetRotations(0);
         // Updates the left sticks rotations to that of the controller.
-        leftStick.UpdateRotation(Quaternion.Euler(47, -48, LcontrollerAngles.x));
+        leftStick.UpdateRotation(Quaternion.Euler(Lx, Ly, LcontrollerAngles.x));
         // Updates the the left sticks squeeze value.
         leftStick.UpdateSqueeze(api.GetIsSqueezeGesture(0));
 
         // Get the rotations of the right controller...
         Vector3 RcontrollerAngles = api.GetRotations(1);
         // Updates the right sticks rotations to that of the controller.
-        rightStick.UpdateRotation(Quaternion.Euler(44, 16, RcontrollerAngles.x));
+        rightStick.UpdateRotation(Quaternion.Euler(Rx, Ry, RcontrollerAngles.x));
         // Updates the right sticks squeeze value.
         rightStick.UpdateSqueeze(api.GetIsSqueezeGesture(1));
     }
