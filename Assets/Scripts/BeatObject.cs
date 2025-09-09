@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/* [--- This script allows a beat to be played when it collides with each part of the drum kit. ---] */
+/* [--- This script allows a beat to be played when it collides with each part of the drum kit ---] */
 public class BeatObject : MonoBehaviour
 {
-    // References to necessary etee components.
     public etee.eteeAPI api;
 
     public bool canBePressed;
