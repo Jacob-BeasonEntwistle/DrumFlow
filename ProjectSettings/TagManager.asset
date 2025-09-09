@@ -11,6 +11,8 @@ TagManager:
   - midTom
   - ride
   - drumstick
+  - beat
+  - MenuButton
   layers:
   - Default
   - TransparentFX

@@ -79,7 +79,6 @@ namespace etee {
         public Vector3 magLeftOffset;
         public Vector3 magRightOffset;
 
-
         // Start is called before the first frame update
         void Start()
         {

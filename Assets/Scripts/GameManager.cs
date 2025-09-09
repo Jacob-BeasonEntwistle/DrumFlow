@@ -7,8 +7,10 @@ using FMODUnity;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+/* [--- This script runs the main gameplay including the beats scrolling, when the game should be started, the score, and the multiplier. ---] */
 public class GameManager : MonoBehaviour
 {
+    // References to necessary etee components.
     public etee.eteeAPI api;
 
     public static GameManager instance;
@@ -23,6 +25,10 @@ public class GameManager : MonoBehaviour
     // --Different types of hits--
     //public int scorePerGoodBeat = 125;
     //public int scorePerPerfectBeat = 150;
+
+    public int currentMultiplier;
+    public int multiplierTracker;
+    public int[] multiplierThresholds;
 
     public TMP_Text scoreText;
     public TMP_Text multiText;

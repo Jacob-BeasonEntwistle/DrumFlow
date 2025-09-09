@@ -1,30 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
-public class UIDrumstick : MonoBehaviour
+public class UIDrumstick : Drumstick
 {
-    // References to necessary etee components.
-    public etee.eteeDevice leftDevice;
-    public etee.eteeDevice rightDevice;
-    public etee.eteeAPI api;
+    private MenuButton currentButton;
 
-    // Update is called once per frame
-    void Update()
+    // Used to set which part of the drum kit is currently selected.
+    protected override void OnTriggerEnter(Collider other)
     {
-        // Gets the rotations of the left controller.
-        Vector3 LcontrollerAngles = api.GetRotations(0);
-        // Updates the left sticks rotations to that of the controller.
-        UpdateRotation(Quaternion.Euler(0, 0, LcontrollerAngles.x));
-
-        // Get the rotations of the right controller...
-        Vector3 RcontrollerAngles = api.GetRotations(1);
-        // Updates the right sticks rotations to that of the controller.
-        UpdateRotation(Quaternion.Euler(0, 0, RcontrollerAngles.x));
+        if (other.CompareTag("MenuButton"))
+        {
+            UnityEngine.Debug.Log("Entered menu button collider: " + other.name);
+            currentButton = other.GetComponent<MenuButton>();
+        }
     }
 
-    public void UpdateRotation(Quaternion rotation)
+    // A method that plays the instrument depending on if the controller is squeezed and the drum has not been played.
+    public override void UpdateSqueeze(bool squeeze)
     {
-        transform.rotation = rotation;
+        if (squeeze && !hasPlayed && currentButton != null)
+        {
+            currentButton.PressButton();
+            PlaySnareUI();
+            hasPlayed = true;
+        }
+        else if (!squeeze)
+        {
+            hasPlayed = false;
+        }
+        isSqueezing = squeeze;
+    }
+
+    // Used to deselect any parts of the drumkits once the collider is exited.
+    protected void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("MenuButton"))
+        {
+            currentButton = null;
+            hasPlayed = false;
+        }
+    }
+
+    // A function to play each sound of the drum kit.
+    private void PlaySnareUI()
+    {
+        AudioManager.instance.PlayOneShot(SnareSound, this.transform.position);
+        UnityEngine.Debug.Log("The Snare drum was hit! Ckk");
     }
 }
