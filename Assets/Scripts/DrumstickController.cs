@@ -16,6 +16,11 @@ public class DrumstickController : MonoBehaviour
 
     public float Lx, Ly, Rx, Ry;
 
+    void Start()
+    {
+
+    }
+
     // Update is called once per frame
     void Update()
     {
