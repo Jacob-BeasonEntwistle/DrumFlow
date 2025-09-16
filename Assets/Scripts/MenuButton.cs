@@ -11,7 +11,7 @@ public class MenuButton : MonoBehaviour
         Level_1,
         Level_2,
         Level_3,
-        Level_4,
+        Freeplay,
         Settings,
         Haptics,
         VolUp,
@@ -47,6 +47,9 @@ public class MenuButton : MonoBehaviour
                 break;
             case ButtonAction.Level_2:
                 menuManager.level_2();
+                break;
+            case ButtonAction.Freeplay:
+                menuManager.freeplay();
                 break;
             case ButtonAction.Settings:
                 menuManager.settings();

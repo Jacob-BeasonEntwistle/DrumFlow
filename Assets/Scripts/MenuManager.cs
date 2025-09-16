@@ -12,7 +12,27 @@ public class MenuManager : MonoBehaviour
 
     public MenuRotation menuRotation;
 
-    public Toggle toggle;
+    private bool hapticsEnabled = true;
+    public GameObject enabledText;
+    public GameObject disabledText;
+
+    void Start()
+    {
+        api = GameObject.Find("/ContinuousObject/eteeAPI/API").GetComponent<etee.eteeAPI>();
+
+        if (hapticsEnabled)
+        {
+            enabledText.SetActive(true);
+            disabledText.SetActive(false);
+            api.EnableHaptics();
+        }
+        else
+        {
+            enabledText.SetActive(false);
+            disabledText.SetActive(true);
+            api.DisableHaptics();
+        }
+    }
 
     void Update()
     {
@@ -42,6 +62,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Level_2");
     }
 
+    public void freeplay()
+    {
+        SceneManager.LoadScene("Freeplay");
+    }
+
     public void settings()
     {
         menuRotation.showSettings();
@@ -49,13 +74,18 @@ public class MenuManager : MonoBehaviour
 
     public void haptics()
     {
-        if (toggle.isOn)
+        hapticsEnabled = !hapticsEnabled;   // Flips the state of the bool each time it's called.
+
+        if (hapticsEnabled)
         {
+            enabledText.SetActive(true);
+            disabledText.SetActive(false);
             api.EnableHaptics();
         }
-
-        if (!toggle.isOn)
+        else
         {
+            enabledText.SetActive(false);
+            disabledText.SetActive(true);
             api.DisableHaptics();
         }
     }

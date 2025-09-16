@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using FMODUnity;
 using System.Collections.Specialized;
 using System;
@@ -11,6 +12,21 @@ public class AudioManager : MonoBehaviour
     public FMOD.Studio.EventInstance musicEventInstance;
 
     public static AudioManager instance { get; private set; }
+
+    [SerializeField] protected EventReference ambience;
+    private FMOD.Studio.EventInstance ambienceEventInstance;
+
+    private int currentSceneIndex;
+
+    void Start()
+    {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        if (currentSceneIndex == 3)
+        {
+            InitializeAmbience(instance.ambience);
+        }
+    }
 
     private void Awake()
     {
@@ -34,6 +50,12 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.AttachInstanceToGameObject(musicEventInstance, gameObject, GetComponent<Rigidbody>());
 
         musicEventInstance.start();
+    }
+
+    public void InitializeAmbience(EventReference ambienceEventReference)
+    {
+        ambienceEventInstance = RuntimeManager.CreateInstance(ambienceEventReference);
+        ambienceEventInstance.start();
     }
 
     public void StopMusic()
