@@ -64,7 +64,6 @@ public class Drumstick : MonoBehaviour
         if (other.tag == currentBox)
         {
             currentBox = null;
-            hasPlayed = false;
         }
     }
 

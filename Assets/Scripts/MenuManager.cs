@@ -62,6 +62,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Level_2");
     }
 
+    public void level_3()
+    {
+        SceneManager.LoadScene("Level_3");
+    }
+
     public void freeplay()
     {
         SceneManager.LoadScene("Freeplay");

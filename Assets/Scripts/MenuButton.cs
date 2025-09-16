@@ -48,6 +48,9 @@ public class MenuButton : MonoBehaviour
             case ButtonAction.Level_2:
                 menuManager.level_2();
                 break;
+            case ButtonAction.Level_3:
+                menuManager.level_3();
+                break;
             case ButtonAction.Freeplay:
                 menuManager.freeplay();
                 break;
