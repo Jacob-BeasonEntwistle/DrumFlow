@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private EventReference LevelMusic;
     private int currentSceneIndex;
     private bool canContinue = false;
-    
+    private bool wasSqueezing = false;
+
     public int currentScore;
     public int scorePerBeat = 100;
     // --Different types of hits--
@@ -186,9 +187,12 @@ public class GameManager : MonoBehaviour
 
     public void levelContinue()
     {
-        // If both controllers are squeezed or space is pressed...
-        if (api.GetIsSqueezeGesture(0) == true && api.GetIsSqueezeGesture(1) == true || Input.GetKeyDown(KeyCode.Space))
+        bool isSqueezing = (api.GetIsSqueezeGesture(0) && api.GetIsSqueezeGesture(1) || Input.GetKeyDown(KeyCode.Space));
+
+        // If both controllers were squeezing but have now stopped...
+        if (wasSqueezing && !isSqueezing)
         {
+            // Get the index of the next scene...
             int nextSceneIndex = currentSceneIndex + 1;
 
             if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
@@ -202,5 +206,7 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(0);
             }
         }
+
+        wasSqueezing = isSqueezing;
     }
 }
