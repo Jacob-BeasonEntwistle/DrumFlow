@@ -51,6 +51,27 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         api = GameObject.Find("/ContinuousObject/eteeAPI/API").GetComponent<etee.eteeAPI>();
+        if (scoreText == null)
+        {
+            scoreText = GameObject.Find("scoreText").GetComponent<TMP_Text>();
+        }
+        if (multiText == null)
+        {
+            multiText = GameObject.Find("multiplierText").GetComponent<TMP_Text>();
+        }
+        if (resultsScreen == null)
+        {
+            resultsScreen = GameObject.Find("results");
+        }
+        if (startScreen == null)
+        {
+            startScreen = GameObject.Find("startScreen");
+        }
+        if (beatScroller == null)
+        {
+            beatScroller = GameObject.Find("BeatScroller").GetComponent<BeatScroller>();
+        }
+
 
         instance = this;
         scoreText.text = "Score: 0";
