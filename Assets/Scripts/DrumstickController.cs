@@ -16,6 +16,21 @@ public class DrumstickController : MonoBehaviour
 
     public float Lx, Ly, Rx, Ry;
 
+    void Start()
+    {
+        leftDevice = GameObject.Find("/ContinuousObject/eteeAPI/LeftDevice").GetComponent<etee.eteeDevice>();
+        rightDevice = GameObject.Find("/ContinuousObject/eteeAPI/RightDevice").GetComponent<etee.eteeDevice>();
+        api = GameObject.Find("/ContinuousObject/eteeAPI/API").GetComponent<etee.eteeAPI>();
+        leftStick = GameObject.Find("/DrumstickController_Gameplay/drumstickL").GetComponent<Drumstick>();
+        rightStick = GameObject.Find("/DrumstickController_Gameplay/drumstickR").GetComponent<Drumstick>();
+
+        if (leftStick == null)
+        {
+            leftStick = GameObject.Find("/DrumstickController_UI/drumstickL").GetComponent<Drumstick>();
+            rightStick = GameObject.Find("/DrumstickController_UI/drumstickR").GetComponent<Drumstick>();
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

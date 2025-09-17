@@ -20,13 +20,15 @@ public class UIDrumstick : Drumstick
     // A method that plays the instrument depending on if the controller is squeezed and the drum has not been played.
     public override void UpdateSqueeze(bool squeeze)
     {
+        // Squeezing while over a button.
         if (squeeze && !hasPlayed && currentButton != null)
         {
             currentButton.PressButton();
             PlaySnareUI();
             hasPlayed = true;
         }
-        else if (!squeeze)
+        // Releasing squeeze.
+        if (!squeeze)
         {
             hasPlayed = false;
         }
@@ -38,8 +40,10 @@ public class UIDrumstick : Drumstick
     {
         if (other.CompareTag("MenuButton"))
         {
-            currentButton = null;
-            hasPlayed = false;
+            if (currentButton != null && other.gameObject == currentButton.gameObject)
+            {
+                currentButton = null;
+            }
         }
     }
 

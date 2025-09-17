@@ -11,6 +11,11 @@ public class BeatObject : MonoBehaviour
     public bool canBePressed;
     private string currentDrumTag = "";
 
+    void Start()
+    {
+        api = GameObject.Find("/ContinuousObject/eteeAPI/API").GetComponent<etee.eteeAPI>();
+    }
+
     // Update is called once per frame
     void Update()
     {

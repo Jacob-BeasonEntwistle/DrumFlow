@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using FMODUnity;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.ComponentModel;
 
 /* [--- This script runs the main gameplay including the beats scrolling, when the game should be started, the score, and the multiplier. ---] */
 public class GameManager : MonoBehaviour
@@ -18,8 +19,10 @@ public class GameManager : MonoBehaviour
     public bool startPlaying;
     public BeatScroller beatScroller;
     [SerializeField] private EventReference LevelMusic;
-    //public int currentLevel = 1;
-    
+    private int currentSceneIndex;
+    private bool canContinue = false;
+    private bool wasSqueezing = false;
+
     public int currentScore;
     public int scorePerBeat = 100;
     // --Different types of hits--
@@ -47,7 +50,28 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        api.RestartStreaming();
+        api = GameObject.Find("/ContinuousObject/eteeAPI/API").GetComponent<etee.eteeAPI>();
+        if (scoreText == null)
+        {
+            scoreText = GameObject.Find("scoreText").GetComponent<TMP_Text>();
+        }
+        if (multiText == null)
+        {
+            multiText = GameObject.Find("multiplierText").GetComponent<TMP_Text>();
+        }
+        if (resultsScreen == null)
+        {
+            resultsScreen = GameObject.Find("results");
+        }
+        if (startScreen == null)
+        {
+            startScreen = GameObject.Find("startScreen");
+        }
+        if (beatScroller == null)
+        {
+            beatScroller = GameObject.Find("BeatScroller").GetComponent<BeatScroller>();
+        }
+
 
         instance = this;
         scoreText.text = "Score: 0";
@@ -55,6 +79,8 @@ public class GameManager : MonoBehaviour
 
         // Finds all objects with the script 'BeatObject'.
         totalBeats = FindObjectsOfType<BeatObject>().Length;
+
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     // Update is called once per frame
@@ -115,9 +141,14 @@ public class GameManager : MonoBehaviour
                 rankText.text = rankValue;
 
                 finalScoreText.text = currentScore.ToString();
+
+                canContinue = true;
             }
 
-            //levelContinue();
+            if (canContinue)
+            {
+                levelContinue();
+            }
         }
     }
 
@@ -175,14 +206,28 @@ public class GameManager : MonoBehaviour
         missedHits++;
     }
 
-    //public void levelContinue()
-    //{
-    //    if (AudioManager.instance.IsMusicStopped() && resultsScreen.activeInHierarchy)
-    //    {
-    //        if (api.GetIsSqueezeGesture(0) == true && api.GetIsSqueezeGesture(1) == true || Input.GetKeyDown(KeyCode.Space))
-    //        {
-    //            SceneManager.LoadScene("Level_" + (currentLevel + 1).ToString());
-    //        }
-    //    }
-    //}
+    public void levelContinue()
+    {
+        bool isSqueezing = (api.GetIsSqueezeGesture(0) && api.GetIsSqueezeGesture(1) || Input.GetKeyDown(KeyCode.Space));
+
+        // If both controllers were squeezing but have now stopped...
+        if (wasSqueezing && !isSqueezing)
+        {
+            // Get the index of the next scene...
+            int nextSceneIndex = currentSceneIndex + 1;
+
+            if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+            {
+                // Loads the next level
+                SceneManager.LoadScene(nextSceneIndex);
+            }
+            else
+            {
+                // If there are no more levels, you go back to the main menu.
+                SceneManager.LoadScene(0);
+            }
+        }
+
+        wasSqueezing = isSqueezing;
+    }
 }
