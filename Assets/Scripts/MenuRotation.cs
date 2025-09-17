@@ -11,6 +11,7 @@ public class MenuRotation : MonoBehaviour
     private Quaternion mainRotation;
     private Quaternion levelRotation;
     private Quaternion settingsRotation;
+    private Quaternion howtoplayRotation;
 
     private Quaternion targetRotation;
 
@@ -20,6 +21,7 @@ public class MenuRotation : MonoBehaviour
         mainRotation = this.transform.rotation;
         levelRotation = Quaternion.Euler(mainRotation.eulerAngles + new Vector3(0, -135, 0));
         settingsRotation = Quaternion.Euler(mainRotation.eulerAngles + new Vector3(0, 110, 0));
+        howtoplayRotation = Quaternion.Euler(mainRotation.eulerAngles + new Vector3(180, 0, 0));
 
         targetRotation = mainRotation;
     }
@@ -43,5 +45,10 @@ public class MenuRotation : MonoBehaviour
     public void showSettings()
     {
         targetRotation = settingsRotation;
+    }
+
+    public void showHelp()
+    {
+        targetRotation = howtoplayRotation;
     }
 }

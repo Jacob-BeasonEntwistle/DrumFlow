@@ -72,6 +72,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Freeplay");
     }
 
+    public void howtoplay()
+    {
+        menuRotation.showHelp();
+    }
+
     public void settings()
     {
         menuRotation.showSettings();
