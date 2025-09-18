@@ -1,71 +1,57 @@
 # DrumFlow
-My fun rehabilitation game that uses etee controllers.
-It is a rhythm game that uses the yaw movement of the controllers to change which drum the player will hit.
+Created by Jacob Beason Entwistle during the TG0 mini-placement. (Aug-Sept 2025)
 
-Original Sound track for the level music by Jacob Beason Entwistle
----------------------------------------------------------------
-- Good Vibes - DrumFlow.mp3
-- The Basics - DrumFlow.mp3
-- Rockin' On - DrumFlow.mp3
+---
 
-Packs downloaded from Freesound
-----------------------------------------
+## Overview
+**Drumflow** is a fun rhythm game where the player takes on the role of a drummer.
+This game's main purpose is to aid with rehabilitation by making it more interactive and engaging.
 
+---
 
-Ocean Ambience:
-ocean-2.wav by xserra -- https://freesound.org/s/161701/ -- License: Attribution 4.0
---------------------
+## Unity Project Details
+- **Unity Version:** 2022.3.26 LTS
+- **Start Scene:** `Assets/Scenes/MainMenu.unity`
+    - You can also play from any other scene if desired.
 
-"Ian&#x27;s Drum Set"
+---
 
-This Pack of sounds contains sounds by the following user:
- - ianhall ( https://freesound.org/people/ianhall/ )
+## Dependencies
+- **FMOD Studio** - used for audio integration.
+    (If you’re sharing the repo, check whether FMOD-related files are included in `Assets/` and `Packages/`. Often, FMOD integration scripts and settings are stored in the project, but external FMOD *build banks* may need to be generated again from FMOD Studio if they aren’t included.)
 
-You can find this pack online at: https://freesound.org/people/ianhall/packs/691/
+---
 
+## Audio
 
-Licenses in this Pack (see below for individual sound licenses)
----------------------------------------------------------------
+All in-game sound effects and drum sounds are included via FMOD banks, which are included in the project. The following audio assets are used in the game:
 
-Attribution 3.0: http://creativecommons.org/licenses/by/3.0/
+- **Original Soundtrack:** composed by Jacob Beason Entwistle
+    - `Good Vibes - DrumFlow.mp3`
+    - `The Basics - DrumFlow.mp3`
+    - `Rockin' On - DrumFlow.mp3`
+All music files are included in the repo under:
+`Assets/LevelMusic/`
 
+- **Drum Sounds:** Sourced from the Freesound pack "Ian&#x27;s Drum Set" (Attribution 3.0)
+- Author: [ianhall](https://freesound.org/people/ianhall/)
+- Pack: [https://freesound.org/people/ianhall/packs/691/](https://freesound.org/people/ianhall/packs/691/)
+- License: [Attribution 3.0](http://creativecommons.org/licenses/by/3.0/)
 
-Sounds in this Pack
--------------------
+**Additional Sound Effects:** Ocean Ambience
+- Author: [xserra](https://freesound.org/s/161701/)
+- Source: [Freesound](https://freesound.org/s/161701/)
+- License: [Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-  * 13254__ianhall__splash.aiff.aiff
-    * url: https://freesound.org/s/13254/
-    * license: Attribution 3.0
-  * 13253__ianhall__snare.aiff.aiff
-    * url: https://freesound.org/s/13253/
-    * license: Attribution 3.0
-  * 13252__ianhall__snare-side-stick.aiff.aiff
-    * url: https://freesound.org/s/13252/
-    * license: Attribution 3.0
-  * 13251__ianhall__snare-rim-shot.aiff.aiff
-    * url: https://freesound.org/s/13251/
-    * license: Attribution 3.0
-  * 13250__ianhall__ride.aiff.aiff
-    * url: https://freesound.org/s/13250/
-    * license: Attribution 3.0
-  * 13249__ianhall__rack-tom.aiff.aiff
-    * url: https://freesound.org/s/13249/
-    * license: Attribution 3.0
-  * 13248__ianhall__hihat-slushy.aiff.aiff
-    * url: https://freesound.org/s/13248/
-    * license: Attribution 3.0
-  * 13247__ianhall__hihat-open.aiff.aiff
-    * url: https://freesound.org/s/13247/
-    * license: Attribution 3.0
-  * 13246__ianhall__hihat-closed.aiff.aiff
-    * url: https://freesound.org/s/13246/
-    * license: Attribution 3.0
-  * 13245__ianhall__floor-tom.aiff.aiff
-    * url: https://freesound.org/s/13245/
-    * license: Attribution 3.0
-  * 13244__ianhall__crash.aiff.aiff
-    * url: https://freesound.org/s/13244/
-    * license: Attribution 3.0
-  * 13243__ianhall__chinese-cymbal.aiff.aiff
-    * url: https://freesound.org/s/13243/
-    * license: Attribution 3.0
+> All drum sounds and the ocean ambience are integrated into FMOD banks and do not need to be added separately to the repo.
+
+## How to Run
+1. Clone/download the repo.
+2. Open the project in Unity **2022.3.26 LTS**.
+3. Open `Assets/Scenes/MainMenu.unity` and press **Play**.
+
+## Credits
+- Game Design & Programming: Jacob Beason Entwistle
+- Original Soundtrack: Jacob Beason Entwistle
+- Drum Sound effects: Free-to-use sound pack (credited above)
+- Additional Sound Effects: Ocean ambience (credited above)
