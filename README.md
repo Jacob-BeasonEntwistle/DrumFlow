@@ -1,16 +1,12 @@
 # DrumFlow
-My fun rehabilitation game that uses etee controllers and smart insoles.
-
-
-
-
-
-
+My fun rehabilitation game that uses etee controllers.
+It is a rhythm game that uses the yaw movement of the controllers to change which drum the player will hit.
 
 Original Sound track for the level music by Jacob Beason Entwistle
 ---------------------------------------------------------------
 - Good Vibes - DrumFlow.mp3
 - The Basics - DrumFlow.mp3
+- Rockin' On - DrumFlow.mp3
 
 Packs downloaded from Freesound
 ----------------------------------------
@@ -18,7 +14,6 @@ Packs downloaded from Freesound
 
 Ocean Ambience:
 ocean-2.wav by xserra -- https://freesound.org/s/161701/ -- License: Attribution 4.0
-
 --------------------
 
 "Ian&#x27;s Drum Set"
