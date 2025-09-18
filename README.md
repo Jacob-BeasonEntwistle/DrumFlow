@@ -30,10 +30,11 @@ All in-game sound effects and drum sounds are included via FMOD banks, which are
     - `Good Vibes - DrumFlow.mp3`
     - `The Basics - DrumFlow.mp3`
     - `Rockin' On - DrumFlow.mp3`
+
 All music files are included in the repo under:
 `Assets/LevelMusic/`
 
-- **Drum Sounds:** Sourced from the Freesound pack "Ian&#x27;s Drum Set" (Attribution 3.0)
+**Drum Sounds:** Sourced from the Freesound pack "Ian&#x27;s Drum Set" (Attribution 3.0)
 - Author: [ianhall](https://freesound.org/people/ianhall/)
 - Pack: [https://freesound.org/people/ianhall/packs/691/](https://freesound.org/people/ianhall/packs/691/)
 - License: [Attribution 3.0](http://creativecommons.org/licenses/by/3.0/)
