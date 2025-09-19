@@ -59,6 +59,26 @@ public class GameManager : MonoBehaviour
         {
             multiText = GameObject.Find("multiplierText").GetComponent<TMP_Text>();
         }
+        if (percentHitText == null)
+        {
+            percentHitText = GameObject.Find("Percentage value").GetComponent<TMP_Text>();
+        }
+        if (normalsText == null)
+        {
+            normalsText = GameObject.Find("NormalHits value").GetComponent<TMP_Text>();
+        }
+        if (missesText == null)
+        {
+            missesText = GameObject.Find("MissedBeats value").GetComponent<TMP_Text>();
+        }
+        if (rankText == null)
+        {
+            rankText = GameObject.Find("Rank value").GetComponent<TMP_Text>();
+        }
+        if (finalScoreText == null)
+        {
+            finalScoreText = GameObject.Find("FinalScore value").GetComponent<TMP_Text>();
+        }
         if (resultsScreen == null)
         {
             resultsScreen = GameObject.Find("results");
@@ -72,6 +92,7 @@ public class GameManager : MonoBehaviour
             beatScroller = GameObject.Find("BeatScroller").GetComponent<BeatScroller>();
         }
 
+        resultsScreen.SetActive(false);
 
         instance = this;
         scoreText.text = "Score: 0";
