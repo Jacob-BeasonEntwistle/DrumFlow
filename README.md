@@ -1,26 +1,23 @@
 # DrumFlow
 Created by Jacob Beason Entwistle during the TG0 mini-placement. (Aug-Sept 2025)
 
----
+![The Beach Level](DrumFlow_beachLevel.png)
 
 ## Overview
 **Drumflow** is a fun rhythm game where the player takes on the role of a drummer.
 This game's main purpose is to aid with rehabilitation by making it more interactive and engaging.
 
----
 
 ## Unity Project Details
 - **Unity Version:** 2022.3.26 LTS
 - **Start Scene:** `Assets/Scenes/MainMenu.unity`
     - You can also play from any other scene if desired.
 
----
 
 ## Dependencies
 - **FMOD Studio** - used for audio integration.
-    (If you’re sharing the repo, check whether FMOD-related files are included in `Assets/` and `Packages/`. Often, FMOD integration scripts and settings are stored in the project, but external FMOD *build banks* may need to be generated again from FMOD Studio if they aren’t included.)
+    (If you're sharing the repo, check whether FMOD-related files are included in `Assets/` and `Packages/`. Often, FMOD integration scripts and settings are stored in the project, but external FMOD *build banks* may need to be generated again from FMOD Studio if they aren't included.)
 
----
 
 ## Audio
 
