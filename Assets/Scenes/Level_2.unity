@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1049,6 +1048,10 @@ PrefabInstance:
     - target: {fileID: 2962424680767701633, guid: 86a8c2e12f9f73a498156a8a9d2aea37, type: 3}
       propertyPath: m_Name
       value: LevelCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962424680767701633, guid: 86a8c2e12f9f73a498156a8a9d2aea37, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7744604839167660098, guid: 86a8c2e12f9f73a498156a8a9d2aea37, type: 3}
       propertyPath: m_Pivot.x
@@ -9248,7 +9251,7 @@ Transform:
   m_GameObject: {fileID: 919132147698943980}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 4.144812, y: -0.814, z: -5.4799995}
+  m_LocalPosition: {x: 4.144812, y: -0.814, z: -10.4}
   m_LocalScale: {x: 0.031563997, y: 0.01, z: 0.038518693}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10151,8 +10154,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3927819428698fd449557afd1741a2d4, type: 2}
-  - {fileID: 2100000, guid: 9c29fdc7ce32e084ebca75b39f89c322, type: 2}
+  - {fileID: 2100000, guid: 4c5945da26320544f98257c3de8480a1, type: 2}
+  - {fileID: 2100000, guid: fa542ab47cc7bb3418c35926f8cab963, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10772,7 +10775,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147698943980}
-  m_Mesh: {fileID: 1552869193571101529, guid: 19cb3a68b1ad92645b859a3d1b8675ef, type: 3}
+  m_Mesh: {fileID: 1552869193571101529, guid: 953132af92d8f4d43ab285629c9d6f94, type: 3}
 --- !u!33 &3469287837958089653
 MeshFilter:
   m_ObjectHideFlags: 0
