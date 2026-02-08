@@ -1,7 +1,7 @@
 # DrumFlow
 Created by Jacob Beason Entwistle during the TG0 mini-placement. (Aug-Sept 2025)
 
-![The Beach Level](DrumFlow_beachLevel.png)
+[![The Beach Level](DrumFlow_beachLevel.png)](https://www.youtube.com/watch?v=_-foxkPkr1s)
 
 ## Overview
 **Drumflow** is a fun rhythm game where the player takes on the role of a drummer.
