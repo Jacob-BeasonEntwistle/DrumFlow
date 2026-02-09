@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13535,6 +13534,10 @@ PrefabInstance:
     - target: {fileID: 2962424680767701633, guid: 86a8c2e12f9f73a498156a8a9d2aea37, type: 3}
       propertyPath: m_Name
       value: LevelCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962424680767701633, guid: 86a8c2e12f9f73a498156a8a9d2aea37, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7744604839167660098, guid: 86a8c2e12f9f73a498156a8a9d2aea37, type: 3}
       propertyPath: m_Pivot.x

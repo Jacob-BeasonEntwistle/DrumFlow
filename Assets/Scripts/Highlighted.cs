@@ -7,7 +7,6 @@ public class Highlighted : MonoBehaviour
 {
     // Creating references to the materials.
     public Material original;
-    public Material highlighted;
     private Renderer rend;
 
     // Start is called before the first frame update
@@ -25,7 +24,9 @@ public class Highlighted : MonoBehaviour
         if (other.CompareTag("drumstick"))
         {
             // highlight the drumstick part.
-            rend.material = highlighted;
+            Color c = rend.material.color;
+            c.a = 0.8f;
+            rend.material.color = c;
         }
     }
 
@@ -36,7 +37,9 @@ public class Highlighted : MonoBehaviour
         if (other.CompareTag("drumstick"))
         {
             // return the drumstick part to its original state.
-            rend.material = original;
+            Color c = rend.material.color;
+            c.a = 0.2f;
+            rend.material.color = c;
         }
     }
 }
