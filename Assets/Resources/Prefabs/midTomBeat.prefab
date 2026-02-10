@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1527227438910801379}
   - component: {fileID: 1188779780968025674}
   - component: {fileID: 793920806985016154}
+  - component: {fileID: -4764024860528995793}
   m_Layer: 0
   m_Name: midTomBeat
   m_TagString: beat
@@ -28,9 +29,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5214673596289117040}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.165, y: 1.03, z: -48.767998}
-  m_LocalScale: {x: 0.18, y: 0.025, z: 0.18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5214673596289117040}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -973645527778613604, guid: 7534cd8d775e0174d841458e21260ddb, type: 3}
 --- !u!23 &1527227438910801379
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e39803b9eb8dcc34abb663d24b96ac72, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -122,3 +123,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   api: {fileID: 0}
   canBePressed: 0
+--- !u!114 &-4764024860528995793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5214673596289117040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fcd70b664245274b8088a8c7be62f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  original: {fileID: 2100000, guid: e39803b9eb8dcc34abb663d24b96ac72, type: 2}

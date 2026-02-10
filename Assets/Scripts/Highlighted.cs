@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,8 @@ public class Highlighted : MonoBehaviour
     // Creating references to the materials.
     public Material original;
     private Renderer rend;
+    private bool changeOpacity;
+    private Color c;
 
     // Start is called before the first frame update
     void Start()
@@ -15,16 +18,29 @@ public class Highlighted : MonoBehaviour
         // Get the drum kit part's renderer and set its current material to its original state.
         rend = GetComponent<Renderer>();
         rend.material = original;
+
+        c = rend.material.color;
+
+        changeOpacity = true;
+
+        // If the current object is a beat...
+        if (gameObject.CompareTag("beat"))
+        {
+            // set the beat's opacity.
+            c.a = 1.0f;
+            rend.material.color = c;
+
+            changeOpacity = false;
+        }
     }
 
     // When the collider is triggered on entry...
     private void OnTriggerEnter(Collider other)
     {
-        // and the colliding object is the drumstick...
-        if (other.CompareTag("drumstick"))
+        // If the colliding object is the drumstick...
+        if (changeOpacity && other.CompareTag("drumstick"))
         {
-            // highlight the drumstick part.
-            Color c = rend.material.color;
+            // change the beat's opacity.
             c.a = 0.8f;
             rend.material.color = c;
         }
@@ -34,10 +50,9 @@ public class Highlighted : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // and the colliding object is the drumstick...
-        if (other.CompareTag("drumstick"))
+        if (changeOpacity && other.CompareTag("drumstick"))
         {
             // return the drumstick part to its original state.
-            Color c = rend.material.color;
             c.a = 0.2f;
             rend.material.color = c;
         }
