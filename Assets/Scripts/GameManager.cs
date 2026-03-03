@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
     {
         if (!startPlaying)
         {
-            if (api.GetIsSqueezeGesture(0) == true && api.GetIsSqueezeGesture(1) == true || Input.GetKeyDown(KeyCode.Space))
+            if ((api.GetIsSqueezeGesture(0) == true && api.GetIsSqueezeGesture(1) == true) || Input.GetKeyDown(KeyCode.Space))
             {
                 startPlaying = true;
                 startScreen.SetActive(false);
