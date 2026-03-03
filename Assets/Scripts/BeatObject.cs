@@ -39,6 +39,8 @@ public class BeatObject : MonoBehaviour
             // the beat can be pressed.
             canBePressed = true;
             currentDrumTag = other.tag;
+
+            UnityEngine.Debug.Log("Beat collision");
         }
     }
 
