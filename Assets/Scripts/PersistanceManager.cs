@@ -1,51 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PersistanceManager : MonoBehaviour
 {
-    private static PersistanceManager instance;
+    public static PersistanceManager Instance { get; private set; }
 
-    void Awake()
+    public etee.eteeAPI api;
+    public etee.eteeDevice leftDevice;
+    public etee.eteeDevice rightDevice;
+
+    private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
-    }
 
-    public static PersistanceManager Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                instance = FindObjectOfType<PersistanceManager>();
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
 
-                if (instance == null)
-                {
-                    GameObject prefab = Resources.Load<GameObject>("Prefabs/ContinuousObject");
-                    
-                    if (prefab != null)
-                    {
-                        GameObject obj = Instantiate(prefab);
-                        instance = obj.AddComponent<PersistanceManager>();
-                    }
-                    else
-                    {
-                        GameObject obj = new GameObject("ContinuousObject");
-                        instance = obj.AddComponent<PersistanceManager>();
-                    }
-                }
-
-                DontDestroyOnLoad(instance.gameObject);
-            }
-            return instance;
-        }
+        api = transform.Find("eteeAPI/API").GetComponent<etee.eteeAPI>();
+        leftDevice = transform.Find("eteeAPI/LeftDevice").GetComponent<etee.eteeDevice>();
+        rightDevice = transform.Find("eteeAPI/RightDevice").GetComponent<etee.eteeDevice>();
     }
 }

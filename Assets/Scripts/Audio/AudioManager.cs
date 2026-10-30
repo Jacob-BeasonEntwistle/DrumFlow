@@ -22,17 +22,18 @@ public class AudioManager : MonoBehaviour
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-        if (currentSceneIndex == 3)
+        if (currentSceneIndex == 4)
         {
-            InitializeAmbience(instance.ambience);
+            InitializeAmbience(ambience);
         }
     }
 
     private void Awake()
     {
-        if(instance != null)
+        if(instance != null && instance != this)
         {
-            UnityEngine.Debug.LogError("Found more than one Audio Manager in the scene.");
+            Destroy(gameObject);
+            return;
         }
 
         instance = this;
@@ -62,9 +63,28 @@ public class AudioManager : MonoBehaviour
     {
         if (musicEventInstance.isValid())
         {
-            musicEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            musicEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             musicEventInstance.release();
+
+            musicEventInstance = default;
         }
+    }
+
+    public void StopAmbience()
+    {
+        if (ambienceEventInstance.isValid())
+        {
+            ambienceEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            ambienceEventInstance.release();
+
+            ambienceEventInstance = default;
+        }
+    }
+
+    public void StopAllAudio()
+    {
+        StopMusic();
+        StopAmbience();
     }
 
     public bool IsMusicStopped()

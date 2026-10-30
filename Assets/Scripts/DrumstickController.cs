@@ -18,11 +18,15 @@ public class DrumstickController : MonoBehaviour
 
     void Start()
     {
-        leftDevice = GameObject.Find("/ContinuousObject/eteeAPI/LeftDevice").GetComponent<etee.eteeDevice>();
-        rightDevice = GameObject.Find("/ContinuousObject/eteeAPI/RightDevice").GetComponent<etee.eteeDevice>();
-        api = GameObject.Find("/ContinuousObject/eteeAPI/API").GetComponent<etee.eteeAPI>();
-        leftStick = GameObject.Find("/DrumstickController_Gameplay/drumstickL").GetComponent<Drumstick>();
-        rightStick = GameObject.Find("/DrumstickController_Gameplay/drumstickR").GetComponent<Drumstick>();
+        if (PersistanceManager.Instance == null)
+        {
+            Debug.LogError("PersistanceManager does not exist!");
+            return;
+        }
+
+        leftDevice = PersistanceManager.Instance.leftDevice;
+        rightDevice = PersistanceManager.Instance.rightDevice;
+        api = PersistanceManager.Instance.api;
 
         if (leftStick == null)
         {

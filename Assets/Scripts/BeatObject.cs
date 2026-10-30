@@ -13,7 +13,13 @@ public class BeatObject : MonoBehaviour
 
     void Start()
     {
-        api = GameObject.Find("/ContinuousObject/eteeAPI/API").GetComponent<etee.eteeAPI>();
+        if (PersistanceManager.Instance == null)
+        {
+            Debug.LogError("PersistanceManager does not exist!");
+            return;
+        }
+
+        api = PersistanceManager.Instance.api;
     }
 
     // Update is called once per frame
