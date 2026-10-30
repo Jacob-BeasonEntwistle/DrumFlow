@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 using FMODUnity;
@@ -50,7 +49,20 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        api = GameObject.Find("/ContinuousObject/eteeAPI/API").GetComponent<etee.eteeAPI>();
+        if (PersistanceManager.Instance == null)
+        {
+            Debug.LogError("PersistanceManager does not exist!");
+            return;
+        }
+
+        api = PersistanceManager.Instance.api;
+
+        if (api == null)
+        {
+            Debug.LogError("eteeAPI does not exist on PersistanceManager!");
+            return;
+        }
+
         if (scoreText == null)
         {
             scoreText = GameObject.Find("scoreText").GetComponent<TMP_Text>();
@@ -107,6 +119,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown("escape"))
+        {
+            AudioManager.instance.StopAllAudio();
+            SceneManager.LoadScene("MainMenu");
+        }
+
         if (!startPlaying)
         {
             if ((api.GetIsSqueezeGesture(0) == true && api.GetIsSqueezeGesture(1) == true) || Input.GetKeyDown(KeyCode.Space))
@@ -239,13 +257,15 @@ public class GameManager : MonoBehaviour
 
             if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
             {
+                AudioManager.instance.StopAllAudio();
                 // Loads the next level
                 SceneManager.LoadScene(nextSceneIndex);
             }
             else
             {
+                AudioManager.instance.StopAllAudio();
                 // If there are no more levels, you go back to the main menu.
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(1);
             }
         }
 

@@ -17,6 +17,14 @@ public class BeatScroller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (PersistanceManager.Instance == null)
+        {
+            Debug.LogError("PersistanceManager does not exist!");
+            return;
+        }
+
+        api = PersistanceManager.Instance.api;
+
         // This calculates how fast the beats should be moving towards the drum kit.
         beatTempo = beatTempo / 60f;
     }
